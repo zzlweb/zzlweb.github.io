@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: Altq's Blog
+heroText: zzl Blog
 tagline: 山水一程，三生有幸.
 # heroImage: /hero.png
 # heroImageStyle: {

@@ -69,7 +69,7 @@ MongoClient.connect(url, (err, db) => {
   const dbo = db.db("test");
 
   // 插入单挑数据
-  const myObj = { name: "altq", url: "10.8.104.7" };
+  const myObj = { name: "zzl", url: "10.8.104.7" };
   dbo.collection("site").insertOne(myObj, (err, res) => {
     if (err) throw err;
     console.log("文档插入成功！");
@@ -122,7 +122,7 @@ MongoClient.connect(url, (err, db) => {
 });
 ```
 
-## 查询指定条件的数据 检索 name 为 "altq" 的实例
+## 查询指定条件的数据 检索 name 为 "zzl" 的实例
 
 ```
 MongoClient.connect(url, (err, db) => {
@@ -130,8 +130,8 @@ MongoClient.connect(url, (err, db) => {
   console.log("数据库已连接！");
   const dbo = db.db("test");
 
-  // 查询指定条件的数据 检索 name 为 "altq" 的实例
-  const whereStr = { name: "altq" };            // 查询条件
+  // 查询指定条件的数据 检索 name 为 "zzl" 的实例
+  const whereStr = { name: "zzl" };            // 查询条件
   dbo
     .collection("site")
     .find(whereStr)
@@ -152,7 +152,7 @@ MongoClient.connect(url, (err, db) => {
   const dbo = db.db("test");
 
   // updateOne() 更新一条数据
-  const whereStr = { name: "altq" }; // 查询条件
+  const whereStr = { name: "zzl" }; // 查询条件
   const updateStr = { $set: { name: "菜鸟教程", url: "https://www.runoob.com" } };
   dbo.collection("site").updateOne(whereStr, updateStr, function (err, res) {
     if (err) throw err;

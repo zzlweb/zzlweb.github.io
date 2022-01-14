@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Altq's blog",
+  title: "zzl blog",
   description: "山水一程,三生有幸.",
   theme: "reco",
   head: [
@@ -40,8 +40,8 @@ module.exports = {
         text: "联系",
         icon: "reco-message",
         items: [
-          { text: "Github", icon: "reco-github", link: "https://github.com/AltQ1231" },
-          { text: "Blog", icon: "reco-blog", link: "https://altq1231.github.io" },
+          { text: "Github", icon: "reco-github", link: "https://github.com/zzlweb" },
+          { text: "Blog", icon: "reco-blog", link: "https://zzlweb.github.io/" },
         ],
       },
     ],
@@ -78,7 +78,7 @@ module.exports = {
     search: true,
     searchMaxSuggestions: 10,
     lastUpdated: "Last Updated",
-    author: "altq",
+    author: "zzl",
     authorAvatar: "/avatar.jpg",
     record: "ICP 备案文案",
   },

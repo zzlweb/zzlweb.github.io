@@ -139,7 +139,7 @@ test
 一个简单的文档例子如下：
 
 ```
-{"site":"10.8.104.7", "name":"altq"}
+{"site":"10.8.104.7", "name":"zzl"}
 ```
 
 下表列出了 RDBMS 与 MongoDB 对应的术语：
@@ -844,15 +844,15 @@ MongoDB 的 find() 方法可以传入多个键(key)，每个键(key)以逗号隔
 
 ## 实例
 
-以下实例通过 by 和 title 键来查询 altq 中 MongoDB 教程 的数据
+以下实例通过 by 和 title 键来查询 zzl 中 MongoDB 教程 的数据
 
 ```
-> db.col.find({"by":"altq", "title":"MongoDB 教程"}).pretty()
+> db.col.find({"by":"zzl", "title":"MongoDB 教程"}).pretty()
 {
         "_id" : ObjectId("612f493a220ce5ce5c2b4cce"),
         "title" : "MongoDB 教程",
         "description" : "MongoDB 是一个 Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -882,15 +882,15 @@ MongoDB OR 条件语句使用了关键字 `$or`,语法格式如下：
 
 ## 实例
 
-以下实例中，我们演示了查询键 by 值为 altq 或键 title 值为 MongoDB 教程 的文档。
+以下实例中，我们演示了查询键 by 值为 zzl 或键 title 值为 MongoDB 教程 的文档。
 
 ```
-> db.col.find({$or:[{"by":"altq"},{"title": "MongoDB 教程"}]}).pretty()
+> db.col.find({$or:[{"by":"zzl"},{"title": "MongoDB 教程"}]}).pretty()
 {
         "_id" : ObjectId("612f493a220ce5ce5c2b4cce"),
         "title" : "MongoDB 教程",
         "description" : "MongoDB 是一个 Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -903,7 +903,7 @@ MongoDB OR 条件语句使用了关键字 `$or`,语法格式如下：
         "_id" : ObjectId("612f493d220ce5ce5c2b4ccf"),
         "title" : "MongoDB",
         "description" : "MongoDB 是一个 Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -917,15 +917,15 @@ MongoDB OR 条件语句使用了关键字 `$or`,语法格式如下：
 
 ## AND 和 OR 联合使用
 
-以下实例演示了 AND 和 OR 联合使用，类似常规 SQL 语句为： `'where likes>50 AND (by = 'altq' OR title = 'MongoDB 教程')'`
+以下实例演示了 AND 和 OR 联合使用，类似常规 SQL 语句为： `'where likes>50 AND (by = 'zzl' OR title = 'MongoDB 教程')'`
 
 ```
-> db.col.find({"likes": {$gt:50}, $or: [{"by": "altq"},{"title": "MongoDB 教程"}]}).pretty()
+> db.col.find({"likes": {$gt:50}, $or: [{"by": "zzl"},{"title": "MongoDB 教程"}]}).pretty()
 {
         "_id" : ObjectId("612f493a220ce5ce5c2b4cce"),
         "title" : "MongoDB 教程",
         "description" : "MongoDB 是一个 Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -938,7 +938,7 @@ MongoDB OR 条件语句使用了关键字 `$or`,语法格式如下：
         "_id" : ObjectId("612f493d220ce5ce5c2b4ccf"),
         "title" : "MongoDB",
         "description" : "MongoDB 是一个 Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -2242,7 +2242,7 @@ db.collection.update(
 在集合中插入如下数据：
 
 ```
-> db.col.insert({title:'MongoDB 教程',description:'MongoDB 是一个Nosql 数据库',by:'altq',url:'http://10.8.103.47:9000',tags:['mongodb','database','NoSQL'],likes:100})
+> db.col.insert({title:'MongoDB 教程',description:'MongoDB 是一个Nosql 数据库',by:'zzl',url:'http://10.8.103.47:9000',tags:['mongodb','database','NoSQL'],likes:100})
 WriteResult({ "nInserted" : 1 })
 ```
 
@@ -2256,7 +2256,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
         "_id" : ObjectId("612f3c85220ce5ce5c2b4cc5"),
         "title" : "MongoDB",
         "description" : "MongoDB 是一个Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -2303,7 +2303,7 @@ db.collection.save(
         "_id" : ObjectId("612f428a220ce5ce5c2b4cc7"),
         "title" : "MongoDB 教程",
         "description" : "MongoDB 是一个Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -2321,7 +2321,7 @@ db.collection.save(
 ...         "_id" : ObjectId("612f428a220ce5ce5c2b4cc7"),
 ...         "title" : "MongoDB 教程",
 ...         "description" : "MongoDB 是一个Nosql 数据库",
-...         "by" : "altq",
+...         "by" : "zzl",
 ...         "url" : "http://10.8.103.47:9000",
 ...         "tags" : [
 ...                 "mongodb",
@@ -2336,7 +2336,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
         "_id" : ObjectId("612f3c85220ce5ce5c2b4cc5"),                                                        : 102 })
         "title" : "MongoDB",
         "description" : "MongoDB 是一个Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -2349,7 +2349,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
         "_id" : ObjectId("612f4283220ce5ce5c2b4cc6"),
         "title" : "MongoDB",
         "description" : "MongoDB 是一个Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -2362,7 +2362,7 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
         "_id" : ObjectId("612f428a220ce5ce5c2b4cc7"),
         "title" : "MongoDB 教程",
         "description" : "MongoDB 是一个Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -2447,7 +2447,7 @@ db.collection.remove(
 ```
 >db.col.insert({title: 'MongoDB 教程',
     description: 'MongoDB 是一个 Nosql 数据库',
-    by: 'altq',
+    by: 'zzl',
     url: 'http://10.8.103.47:9000',
     tags: ['mongodb', 'database', 'NoSQL'],
     likes: 100
@@ -2462,7 +2462,7 @@ db.collection.remove(
         "_id" : ObjectId("612f4627220ce5ce5c2b4cca"),
         "title" : "MongoDB 教程",
         "description" : "MongoDB 是一个 Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
@@ -2475,7 +2475,7 @@ db.collection.remove(
         "_id" : ObjectId("612f4628220ce5ce5c2b4ccb"),
         "title" : "MongoDB 教程",
         "description" : "MongoDB 是一个 Nosql 数据库",
-        "by" : "altq",
+        "by" : "zzl",
         "url" : "http://10.8.103.47:9000",
         "tags" : [
                 "mongodb",
