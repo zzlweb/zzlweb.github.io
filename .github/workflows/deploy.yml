@@ -14,7 +14,7 @@ jobs:
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN  }}
-          TARGET_REPO: AltQ1231/altq1231.github.io
+          TARGET_REPO: zzlweb/zzlweb.github.io
           TARGET_BRANCH: gh_pages
           BUILD_SCRIPT: npm install && npm run build
           BUILD_DIR: src/.vuepress/dist/
