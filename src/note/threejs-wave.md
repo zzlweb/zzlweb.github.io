@@ -4,7 +4,7 @@ date: 2022-04-14
 tags:
   - three.js
 categories:
-  - three.js
+  - three.js 
 ---
 
 ::: tip
@@ -16,14 +16,14 @@ three.js 系列 - 实现粒子效果波浪滚动
 首先展示的是全部的代码, 需要对three.js有一定的基础知识，使用的环境是vue3。
 
 
-![](/src/.vuepress/public/threejs-wave/1.png)
+![](/threejs-wave/1.png)
 
-![](/src/.vuepress/public/threejs-wave/2.png)
+![](/threejs-wave/2.png)
 
-![](/src/.vuepress/public/threejs-wave/3.png)
+![](/threejs-wave/3.png)
 
 纹理贴图
-![](/src/.vuepress/public/threejs-wave/5.png)
+![](/threejs-wave/5.png)
 
 
 ```html
